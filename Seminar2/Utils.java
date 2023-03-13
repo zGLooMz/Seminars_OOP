@@ -9,9 +9,9 @@ public class Utils {
     public static void PrintValue(String name, int value) {
         if (value >= 0 && value <= 24) {
             System.out.println(ANSI_BLACK + String.format("%s=%d", name, value) + ANSI_RESET);
-        } else if (value > 25 && value <= 50) {
+        } else if (value >= 25 && value <= 50) {
             System.out.println(ANSI_RED + String.format("%s=%d", name, value) + ANSI_RESET);
-        } else if (value > 51 && value <= 100) {
+        } else if (value >= 51 && value <= 100) {
             System.out.println(ANSI_GREEN + String.format("%s=%d", name, value) + ANSI_RESET);
         } else {
             System.out.println(String.format("%s=%d", name, value));
